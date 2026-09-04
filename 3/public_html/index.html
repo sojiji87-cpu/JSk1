@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!--
+Варламова Елизавета, 25ВП2. Лабораторная работа 3, вариант 5.
+Конвертер градусов °F ↔ °C (сконвертированные значения должны
+добавляться в таблицу на странице после выполнения конвертации).
+-->
+<html> 
+    <head> 
+        <meta name=конвертер content="Конвертер градусов">
+        <title>Конвертер</title> 
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" type="img/icon" href="img/icon.png">
+        <script src="js/java.js" defer></script>
+    </head>
+    <body>
+        <div id="text">
+        <p id="mini">Варламова Елизавета, 25ВП2. Лабораторная работа 3,
+                вариант 5.</p>
+        <p id="title">Конвертер градусов °F и °C</p>
+        <p>(сконвертированные значения добавляются в таблицу после
+                выполнения конвертации)</p>
+          
+        <div id="fields">                
+            <select id="select">
+                <option value="C">C</option>
+                <option value="F">F</option>
+            </select>
+                <input id="input" type="number" oninput="func(this)" step="0.01">
+        </div>
+            
+        <div id="buttons">
+            <button id="convert">Рассчитать</button>
+            <button id="clear">Очистить</button>
+        </div>
+
+        <div class="warning" id="Warning"></div>
+        <div class="warning" id="Clear"></div>
+        <div id="ta"> 
+            <table class="table" id="Result">
+                <tr>
+                    <th>№</th>
+                    <th>C</th>
+                    <th>F</th>
+                </tr>
+            </table>
+        </div> 
+        </div>
+    </body>
+</html>
